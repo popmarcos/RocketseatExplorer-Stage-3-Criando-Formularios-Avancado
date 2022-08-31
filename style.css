@@ -1,0 +1,260 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 465px;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: #293241;
+
+}
+
+body, input, select, textarea {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #BFD7E4;
+  
+}
+
+.page {
+  width: 750px;
+  margin: auto;
+
+}
+
+header {
+  margin-top: 100px;
+  
+}
+
+header, fieldset legend {
+  text-align: center;
+}
+
+header h1 {
+  font-family: 'Staatliches', cursive;
+  font-size: 36px;
+  line-height: 45px;
+  color: #FFFFFF;
+  margin-bottom: 5px;
+  
+}
+
+header p{
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin-bottom: 25px;
+  
+}
+
+header a #img1 {
+  width: 225px;
+  height: 100px;
+  
+}
+
+.redborder {
+  margin-top: 27px;
+  padding: 50px 275px;
+  font-family: 'Staatliches', cursive;
+  font-size: 24px;
+  line-height: 34px;
+  color: #FFFFFF;
+  background: #F67669;
+  height: 133px;
+  border-radius: 8px 8px 0 0;
+
+}
+
+form {
+  margin-bottom: 150px;
+  background: #FAFAFC;
+  min-height: 300px;
+  border-radius: 0 0 8px 8px;
+  padding: 31px 64px 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+
+}
+
+fieldset {
+  border: none;
+  
+}
+
+.fieldset-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+}
+
+fieldset legend {
+  width: 100%;
+  font-family: 'Staatliches', cursive;
+  color: #253B51;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 34px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #E6E6F0;
+
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.input-wrapper label, .checkbox-wrapper {
+  font-size: 14px;
+  line-height: 24px;
+  color: #4E4958;
+  margin-bottom: 8px;
+
+}
+
+.input-wrapper label span {
+  font-size: 12px; 
+  line-height: 20px;
+  color: #C1BCCC;
+  margin-left: 12px;
+
+}
+
+.input-wrapper label span:hover{
+  color: #6c6a71;
+  
+}
+
+.cols1 {
+  display: flex;
+  gap: 22px;
+  appearance: none;
+  -webkit-appearance: none;
+
+}
+
+.cols1 > div {
+  width: 100%;
+
+}
+
+.input-wrapper input, .input-wrapper textarea, .input-wrapper select {
+  background: #FAFAFC;
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+  height: 56px;
+  padding: 0 24px;
+
+  font-size: 14px;
+  line-height: 24px;
+  color: #6c6a71;
+
+}
+
+.input-wrapper textarea {
+  height: 168px;
+  padding: 0;
+
+}
+
+.input-wrapper select {
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 10L12 14L16 10' stroke='%239C98A6' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: right 24px top 50%;
+  
+}
+
+.checkbox-wrapper {
+  position: relative;
+
+}
+
+.checkbox-wrapper label::before {
+  display: block;
+  content: '';
+  height: 24px;
+  width: 24px;
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+
+}
+
+.checkbox-wrapper label {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  gap: 16px;
+
+}
+
+.checkbox-wrapper input {
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  
+}
+
+.checkbox-wrapper input:focus + label::before{
+  outline: 2px solid #000000;
+
+}
+
+.checkbox-wrapper input:checked + label::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z' fill='%2342D3FF'/%3E%3C/svg%3E%0A");  
+
+}
+
+.cols2 {
+  display: flex;
+  gap: 20px;
+  appearance: none;
+  -webkit-appearance: none;
+
+}
+
+.cols2 > div:nth-child(1) {
+  width: 100%;
+
+}
+
+.button {
+  height: 51px;
+  background: #F67669;
+  border-radius: 8px;
+  border: 0;
+  font-family: 'Staatliches', cursive;
+  text-align: center;
+  font-size: 20px;
+  line-height: 26px;
+  color: #FFFFFF;
+
+}
+
+.button:hover {
+  background: #fc6150;
+
+}
+
+input:invalid{
+  border: 1px solid #FF1010;
+
+}
